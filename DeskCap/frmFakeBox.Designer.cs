@@ -1,6 +1,6 @@
 ﻿namespace DeskCap
 {
-    partial class frmCaptureImage
+    partial class frmFakeBox
     {
         /// <summary>
         /// Required designer variable.
@@ -30,25 +30,21 @@
         {
             this.SuspendLayout();
             // 
-            // frmCaptureImage
+            // frmFakeBox
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Cursor = System.Windows.Forms.Cursors.Cross;
+            this.BackColor = System.Drawing.SystemColors.Highlight;
+            this.ClientSize = new System.Drawing.Size(231, 221);
+            this.ForeColor = System.Drawing.SystemColors.Highlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmCaptureImage";
-            this.Opacity = 0.01;
+            this.Name = "frmFakeBox";
+            this.Opacity = 0;
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Capturing Image";
+            this.Text = "frmFakeBox";
             this.TopMost = true;
-            this.Load += new System.EventHandler(this.frmCaptureImage_Load);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.frmCaptureImage_MouseUp);
-            this.Paint += new System.Windows.Forms.PaintEventHandler(this.frmCaptureImage_Paint);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.frmCaptureImage_MouseDown);
-            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmCaptureImage_FormClosing);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.frmCaptureImage_MouseMove);
+            this.Click += new System.EventHandler(this.frmFakeBox_Click);
             this.ResumeLayout(false);
 
         }
