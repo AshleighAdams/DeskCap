@@ -9,6 +9,7 @@ using System.IO;
 using System.Xml;
 using System.Xml.Linq;
 using System.Collections.Specialized;
+using System.Diagnostics;
 
 namespace DeskCap
 {
@@ -107,9 +108,25 @@ namespace DeskCap
             foreach (XElement element in x.Descendants("imgur_page"))
                 url = element.Value;
             Clipboard.SetDataObject(url, true);
-            this.TrayIcon.BalloonTipTitle = "Image uploaded";
-            this.TrayIcon.ShowBalloonTip(2, "Image Uploaded!", "Your image has been uploaded (" + url + ")", ToolTipIcon.Info);
+            this.URL = url;
+            this.TrayIcon.ShowBalloonTip(2, "Image Uploaded!", "Your image has been uploaded and the URL has been copied to the clipbaord. (" + url + ")", ToolTipIcon.Info);
             return url;
+        }
+        string URL;
+
+        private void captureToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCaptureImage img = new frmCaptureImage();
+            if (img.ShowDialog() == DialogResult.OK)
+            {
+                UploadFile(img.Result);
+            }
+        }
+
+        private void TrayIcon_BalloonTipClicked(object sender, EventArgs e)
+        {
+            ProcessStartInfo info = new ProcessStartInfo(this.URL);
+            Process.Start(info);
         }
     }
 }
