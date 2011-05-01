@@ -42,6 +42,7 @@ namespace DeskCap
 
         private void frmCaptureImage_MouseUp(object sender, MouseEventArgs e)
         {
+            Box.Opacity = 0;
             Point Start = new Point();
             Point End = new Point();
 
