@@ -12,3 +12,5 @@ C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\obj\Debug\DeskCap.Properties.Res
 C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\obj\Debug\DeskCap.csproj.GenerateResource.Cache
 C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\bin\Debug\DeskCap.exe
 C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\bin\Debug\DeskCap.pdb
+C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\obj\Debug\DeskCap.frmSettings.resources
+C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\bin\Debug\DeskCap.exe.config

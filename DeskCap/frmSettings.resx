@@ -117,7 +117,37 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <metadata name="TrayIcon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="ContextMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>115, 17</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="TrayIcon.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
+        AAAREhIAERISlBESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xES
+        EpQREhIAERISlBESEv8REhL/ERIS/xESEv8REhL/gIGB////////////gIGB/xESEv8REhL/ERIS/xES
+        Ev8REhL/ERISlBESEv8REhL/ERIS/xESEv8REhL/ERIS//////////////////////8REhL/ERIS/xES
+        Ev8REhL/ERIS/xESEuwREhL/ERIS/xESEv8REhL/ERIS/xESEv//////////////////////ERIS/xES
+        Ev8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL//////////////////////xES
+        Ev8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS////////////////////
+        //8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv//////////////
+        ////////ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/////////
+        /////////////xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS////
+        //////////////////8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xES
+        Ev+AgYH///////////+AgYH/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xES
+        Ev8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xES
+        Ev8REhL/ERIS/xtsTv8kxon/JMqM/xtsTv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xES
+        Ev8REhL/ERIS/xESEv8kxon/JMaJ/yTGif8kxon/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xES
+        Ev8REhL/ERIS/xESEv8REhL/G2xO/yTGif8kxon/G2xO/xESEv8REhL/ERIS/xESEv8REhL/ERIS7BES
+        EpQREhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xES
+        EpQREhIAERISlBESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xESEv8REhL/ERIS/xES
+        EpQREhIAgAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAgAEAAA==
+</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAQAQAAAAAAAAAAAAAAAAAAAAA
