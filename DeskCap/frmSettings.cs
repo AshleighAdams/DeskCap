@@ -13,13 +13,15 @@ using System.Diagnostics;
 
 namespace DeskCap
 {
+
     public partial class frmSettings : Form
     {
         public frmSettings()
         {
             InitializeComponent();
         }
-
+        private bool Capturing = false;
+        KeyboardHook hook;
         private void frmSettings_Load(object sender, EventArgs e)
         {
             this.Opacity = 0.0;
@@ -34,6 +36,13 @@ namespace DeskCap
             tmr.Enabled = true;
             tbAPIKey.Text = Properties.Settings.Default.APIKey;
             cbUseDirectLink.Checked = Properties.Settings.Default.DirectLink;
+
+            hook = new KeyboardHook();
+            hook.RegisterHotKey(DeskCap.ModifierKeys.Shift, Keys.F11);
+            hook.KeyPressed += delegate
+            {
+                captureToolStripMenuItem_Click(null, null);
+            };
         }
 
         private void btnApply_Click(object sender, EventArgs e)
@@ -116,11 +125,14 @@ namespace DeskCap
 
         private void captureToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            if (this.Capturing) return;
+            this.Capturing = true;
             frmCaptureImage img = new frmCaptureImage();
             if (img.ShowDialog() == DialogResult.OK)
             {
                 UploadFile(img.Result);
             }
+            this.Capturing = false;
         }
 
         private void TrayIcon_BalloonTipClicked(object sender, EventArgs e)

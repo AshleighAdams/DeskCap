@@ -1,0 +1,11 @@
+C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\bin\Release\DeskCap.exe.config
+C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\bin\Release\DeskCap.exe
+C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\bin\Release\DeskCap.pdb
+C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\obj\Release\ResolveAssemblyReference.cache
+C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\obj\Release\DeskCap.frmCaptureImage.resources
+C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\obj\Release\DeskCap.frmFakeBox.resources
+C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\obj\Release\DeskCap.frmSettings.resources
+C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\obj\Release\DeskCap.Properties.Resources.resources
+C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\obj\Release\DeskCap.csproj.GenerateResource.Cache
+C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\obj\Release\DeskCap.exe
+C:\Users\C0BRA\Desktop\Projects\DeskCap\DeskCap\obj\Release\DeskCap.pdb
