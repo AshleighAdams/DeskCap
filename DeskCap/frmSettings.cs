@@ -105,21 +105,33 @@ namespace DeskCap
 
             var values = new NameValueCollection
             {
-                { "key", "433a1bf4743dd8d7845629b95b5ca1b4" },
+                { "key", Properties.Settings.Default.APIKey },
                 { "image", Convert.ToBase64String(Img) }
             };
+            // original_image "imgur_page"
 
-            byte[] response = w.UploadValues("http://imgur.com/api/upload.xml", values);
+            try
+            {
+                byte[] response = w.UploadValues("http://imgur.com/api/upload.xml", values);
 
-            XDocument x = XDocument.Parse(System.Text.Encoding.ASCII.GetString(response));
+                string tag = Properties.Settings.Default.DirectLink ? "original_image" : "imgur_page";
 
-            string url = "";
-            foreach (XElement element in x.Descendants("imgur_page"))
-                url = element.Value;
-            Clipboard.SetDataObject(url, true);
-            this.URL = url;
-            this.TrayIcon.ShowBalloonTip(2, "Image Uploaded!", "Your image has been uploaded and the URL has been copied to the clipbaord. (" + url + ")", ToolTipIcon.Info);
-            return url;
+                XDocument x = XDocument.Parse(System.Text.Encoding.ASCII.GetString(response));
+
+                string url = "";
+                foreach (XElement element in x.Descendants(tag))
+                    url = element.Value;
+                Clipboard.SetDataObject(url, true);
+                this.URL = url;
+                this.TrayIcon.ShowBalloonTip(2, "Image Uploaded!", "Your image has been uploaded and the URL has been copied to the clipbaord. (" + url + ")", ToolTipIcon.Info);
+                return url;
+            }
+            catch (WebException ex)
+            {
+                if (ex.Message.Contains("(400)"))
+                    MessageBox.Show("Error uploading image, API key is invalid or has exceeded the maximum uploads this day.", "DeskCap - Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            return "";
         }
         string URL;
 

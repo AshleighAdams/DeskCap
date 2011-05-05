@@ -27,6 +27,7 @@ namespace DeskCap
             this.Left = 0;
             this.Top = 0;
             this.Box = new frmFakeBox();
+            this.Opacity = 0.01;
             Box.Show();
         }
 
@@ -37,7 +38,7 @@ namespace DeskCap
 
             this.StartPoint = e.Location;
             frmCaptureImage_MouseMove(sender, e);
-            Box.Opacity = 0.1;
+            Box.Opacity = 0.2;
         }
 
         private void frmCaptureImage_MouseUp(object sender, MouseEventArgs e)
@@ -86,7 +87,8 @@ namespace DeskCap
         }
 
         private void frmCaptureImage_Paint(object sender, PaintEventArgs e)
-        {       }
+        {
+        }
 
         private void frmCaptureImage_FormClosing(object sender, FormClosingEventArgs e)
         {

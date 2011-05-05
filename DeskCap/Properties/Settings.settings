@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="APIKey" Type="System.String" Scope="User">
-      <Value Profile="(Default)" />
+      <Value Profile="(Default)">433a1bf4743dd8d7845629b95b5ca1b4</Value>
     </Setting>
     <Setting Name="DirectLink" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">False</Value>

@@ -25,7 +25,7 @@ namespace DeskCap.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        [global::System.Configuration.DefaultSettingValueAttribute("433a1bf4743dd8d7845629b95b5ca1b4")]
         public string APIKey {
             get {
                 return ((string)(this["APIKey"]));
